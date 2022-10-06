@@ -5,4 +5,4 @@
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-let myNumber = 32;
+let myNumber = 25;
