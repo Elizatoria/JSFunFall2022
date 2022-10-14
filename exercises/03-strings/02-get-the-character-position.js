@@ -20,4 +20,4 @@ let letter = "i"; // e.g.
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-let characterPosition = index.position;
+let characterPosition = firstName.indexOf(letter);
