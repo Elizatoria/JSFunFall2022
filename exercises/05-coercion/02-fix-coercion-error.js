@@ -9,5 +9,4 @@ let num2 = "7"; // e.g.
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-num2 = parseInt(num2);
-let sum = num1 + num2;
+let sum = parseFloat(num1) + parseFloat(num2);
