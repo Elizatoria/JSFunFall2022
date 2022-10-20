@@ -1,7 +1,7 @@
 let subtotal = 50.0; // e.g.
 let tip = 0.2; // e.g.
 
-let total;
+let total = subtotal + (subtotal * tip);
 
 /**
  * If a customer leaves a tip, change the variable "total"
@@ -14,9 +14,15 @@ let total;
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-if (tip) {
-  total=subtotal + tip;
-  console.log(total);
-} else {
+// if (tip) {
+//   total=subtotal + (subtotal * tip);
+//   console.log(total);
+// } else {
+//   console.log(subtotal);
+// }
+
+if (tip = 0) {
   console.log(subtotal);
+} else {
+  console.log(total);
 }
