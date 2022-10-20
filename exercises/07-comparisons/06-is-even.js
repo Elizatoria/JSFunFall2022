@@ -8,3 +8,11 @@ let num = 8; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let isEven;
+
+if (num === "Even") {
+  isEven = true;
+} else {
+  isEven = false;
+}
