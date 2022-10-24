@@ -23,3 +23,7 @@ if (isBuyingDrink) {
 } else {
   console.log(total);
 }
+
+if (isBuyingDrink) {
+  total = total + drink;
+}

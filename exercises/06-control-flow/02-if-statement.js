@@ -19,3 +19,9 @@ if (tip < 0) {
 } else if (tip = 0) {
   total = subtotal;
 }
+
+if (tip) {
+  total = subtotal + subtotal * tip;
+} else {
+  total = subtotal;
+}
