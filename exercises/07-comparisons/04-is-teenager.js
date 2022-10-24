@@ -17,3 +17,20 @@ if (age > 12 && age < 20) {
 } else {
   isTeenager = false;
 }
+
+// Method 1
+let isTeenager;
+if (age > 12 && age < 20) {
+  isTeenager = true;
+} else {
+  isTeenager = false;
+}
+
+// Method 2
+let isTeenager = false;
+if (age > 12 && age < 20) {
+  isTeenager = true;
+}
+
+// Method 3
+let isTeenager = age > 12 && age < 20;

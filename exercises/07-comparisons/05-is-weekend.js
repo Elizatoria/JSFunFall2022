@@ -17,3 +17,20 @@ if (day === "Saturday" || day === "Sunday") {
 } else {
   isWeekend = false;
 }
+
+// Method 1
+let isWeekend;
+if (day === "Saturday" || day === "Sunday") {
+  isWeekend = true;
+} else {
+  isWeekend = false;
+}
+
+// Method 2
+let isWeekend = false;
+if (day === "Saturday" || day === "Sunday") {
+  isWeekend = true;
+}
+
+// Method 3
+let isWeekend = day === "Saturday" || day === "Sunday";

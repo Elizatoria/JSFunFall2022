@@ -18,3 +18,13 @@ if (userInput1 === userInput2) {
 } else {
   isEqual = false;
 }
+
+// Method 1
+if (userInput1 === userInput2) {
+  isEqual = true;
+} else {
+  isEqual = false;
+}
+
+// Method 2
+isEqual = userInput1 === userInput2;

@@ -17,3 +17,13 @@ if (targetBMI !== actualBMI) {
 } else {
   isNotAtGoalWeight = false;
 }
+
+// Method 1
+if (targetBMI !== actualBMI) {
+  isNotAtGoalWeight = true;
+} else {
+  isNotAtGoalWeight = false;
+}
+
+// Method 2
+isNotAtGoalWeight = targetBMI !== actualBMI;

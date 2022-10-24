@@ -16,3 +16,20 @@ if (num === "Even") {
 } else {
   isEven = false;
 }
+
+// Method 1
+let isEven;
+if (num % 2 === 0) {
+  isEven = true;
+} else {
+  isEven = false;
+}
+
+// Method 2
+let isEven = false;
+if (num % 2 === 0) {
+  isEven = true;
+}
+
+// Method 3
+let isEven = num % 2 === 0;
