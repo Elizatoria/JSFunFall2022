@@ -46,3 +46,15 @@ const adding = (num1, num2) => {
 
 let ans = adding(4, 5);
 console.log(ans):
+
+//Example Six
+const displayCost = (cost, currency) => {
+  if (currency) {
+    return currency + cost.toFixed(2); // $4.30
+  }
+  return cost.toFixed(2);
+};
+let dollarResult = displayCost(4.3, "$");
+console.log( dollarResult );
+let result = displayCost(4.3);
+console.log( result );
