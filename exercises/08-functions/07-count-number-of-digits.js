@@ -10,3 +10,9 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const countNumberOfDigits = (num) => {
+  return num.length;
+}
+let result = countNumberOfDigits(5000);
+console.log(result);

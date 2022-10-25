@@ -16,3 +16,11 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const lowerCaseString = (str) => {
+  if (str === typeof "") {
+   return str.toLowerCase();
+  }
+}
+let result = lowerCaseString("HELLO WORLD");
+console.log(result);
