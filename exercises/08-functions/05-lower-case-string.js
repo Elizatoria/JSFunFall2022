@@ -22,3 +22,10 @@ const lowerCaseString = (str) => {
 }
 let result = lowerCaseString("HELLO WORLD");
 console.log(result);
+
+//Answer
+const lowerCaseString = (str) => {
+  if (typeof str === "string" || str instanceof String) {
+    return str.toLowerCase();
+  }
+};

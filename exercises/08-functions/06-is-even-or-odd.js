@@ -20,3 +20,13 @@ const isEvenOrOdd = (num) => {
 }
 let result = isEvenOrOdd(7);
 console.log(result);
+
+//Answer
+const isEvenOrOdd = (num) => {
+  // If it has a remainder of 2, then the number is even.
+  if (num % 2 === 0) {
+    return "even";
+  } else {
+    return "odd";
+  }
+};
