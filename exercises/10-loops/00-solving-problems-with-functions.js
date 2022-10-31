@@ -7,6 +7,7 @@
  */
 
 const returnAnswer = (personName) => {
+  return personName;
   // WRITE YOUR ANSWER HERE
 };
 

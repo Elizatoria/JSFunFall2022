@@ -7,6 +7,7 @@
  */
 
 const arrayLength = (array) => {
+  return array.length;
   // WRITE YOUR ANSWER HERE
 };
 

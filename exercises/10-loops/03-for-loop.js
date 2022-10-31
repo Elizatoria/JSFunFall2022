@@ -12,6 +12,8 @@
  */
 
 const logArrayWithFor = (array) => {
+	const array = ["Honda", "Ford", "Ferrari"];
+	logArrayWithFor(array);
 	// WRITE YOUR ANSWER HERE
 };
 
