@@ -12,9 +12,8 @@
  */
 
 const logArrayWithFor = (array) => {
-	const array = ["Honda", "Ford", "Ferrari"];
-	logArrayWithFor(array);
 	// WRITE YOUR ANSWER HERE
+	for 
 };
 
 // IGNORE THIS BELOW. It is for the tests.

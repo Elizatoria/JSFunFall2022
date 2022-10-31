@@ -7,6 +7,7 @@
  */
 
 const add = (numbers) => {
+  for ()
   // WRITE YOUR ANSWER HERE
 };
 
