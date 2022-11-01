@@ -8,9 +8,26 @@
  *
  */
 
-const highestNumber = (numbers) => {
+ const highestNumber = (numbers) => {
   // WRITE YOUR ANSWER HERE
+  let max = numbers[0];
+for (let i = 1; i < numbers.length; ++i) {
+  if (numbers[i] > max) {
+  max = numbers[i];
+  }
 };
+}
+highestNumber([1, 10, 2, 3, 4]);
+
+
+ const highestNumber = (numbers) => {
+  // WRITE YOUR ANSWER HERE
+for (let i = 0; i < numbers.length; i++) {
+  let high = Math.max(...numbers);
+  console.log(high);
+  }
+};
+highestNumber([1, 10, 2, 3, 4]);
 
 // IGNORE THIS BELOW. It is for the tests.
 

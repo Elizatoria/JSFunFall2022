@@ -8,9 +8,35 @@
  * @example isPalindrome("nope"); // false
  */
 
+ const isPalindrome = (string) => {
+  // WRITE YOUR ANSWER HERE
+  const len = string.length;  
+  for (let i = 0; i < len / 2; i++) {  
+    if (string[i] !== string[len - 1 - i]) {  
+        console.log( 'It is not a palindrome');  
+    }  
+}  
+console.log('It is a palindrome');
+};
+string("madam");
+
+or 
+
 const isPalindrome = (string) => {
   // WRITE YOUR ANSWER HERE
+  var rev = /[^A-Za-z0-9]/g;
+  string = string.toLowerCase().replace(rev, '');
+  var len = string.length;
+  for (var i = 0; i < len/2; i++) {
+    if (str[i] !== str[len - 1 - i]) {
+        return false;
+    }
+  }
+  return true;
+
 };
+string("madam");
+console.log(isPalindrome);
 
 // IGNORE THIS BELOW. It is for the tests.
 
