@@ -17,9 +17,25 @@
 		console.log(`${array[i]}`);
 };};
 
+// Without Deconstruction
 // let array = ["Honda", "Ford", "Ferrari"];
 // for (let i=0; i<array.length; i++) {
 // console.log(`${array[i]}`);
+
+// Chrisi's Answer
+// for (let i = 0; i < array.length; i++) {
+// 	const values = array[i];
+// 	console.log(values);
+// 	}
+
+//Answer
+const logArrayWithFor = (array) => {
+  // WRITE YOUR ANSWER HERE
+  for (let i = 0; i < array.length; i++) {
+    let item = array[i];
+    console.log(item);
+  }
+};
 
 // IGNORE THIS BELOW. It is for the tests.
 
