@@ -11,10 +11,15 @@
  * // Ferrari
  */
 
-const logArrayWithFor = (array) => {
+ const logArrayWithFor = (array) => {
 	// WRITE YOUR ANSWER HERE
-	for 
-};
+	for (let i=0; i<array.length; i++) {
+		console.log(`${array[i]}`);
+};};
+
+// let array = ["Honda", "Ford", "Ferrari"];
+// for (let i=0; i<array.length; i++) {
+// console.log(`${array[i]}`);
 
 // IGNORE THIS BELOW. It is for the tests.
 
