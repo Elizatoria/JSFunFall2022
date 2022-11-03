@@ -8,3 +8,8 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const myDog = ({name, breed, age, owners}) => {
+  console.log(name, breed, age, owners);
+}
+myDog({name: "Bob", breed: "Mutt", age: 2, owners: ["Sunny", "Swipes"]})

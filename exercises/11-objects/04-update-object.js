@@ -15,3 +15,7 @@ let student = {
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+student.name = "Victoria Forrest";
+student.skills.push("HTML", "CSS");
+console.log(student);

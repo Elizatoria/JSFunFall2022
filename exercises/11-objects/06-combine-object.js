@@ -10,9 +10,11 @@
  * combineObjects(obj1, obj2); // { firstName: "Clark", lastName: "Kent" }
  */
 
-const combineObjects = (obj1, obj2) => {
+ const combineObjects = (obj1, obj2) => {
   // WRITE YOUR ANSWER HERE
+console.log(combineObjects);
 };
+combineObjects({obj1: "Bob", obj2: "Insecticon"});
 
 // IGNORE THIS BELOW. It is for the tests.
 

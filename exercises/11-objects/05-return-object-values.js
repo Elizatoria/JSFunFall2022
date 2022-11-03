@@ -17,9 +17,15 @@
  * // ["Building a Form Validation API", "Mark Marshall", "2021-08-05", "It's required! Let's learn how to leverage the JavaScript Constraint API to remind your users when they need to finish filling out those pesky form fields. And we will show you how to do this with keeping accessibility in mind. ..."]
  */
 
-const returnObjectValues = (blogPost) => {
+ const returnObjectValues = (blogPost) => {
   // WRITE YOUR ANSWER HERE
+let title = "Building a Form Validation API";
+let author = "Mark Marshall";
+let date = "2021-08-05";
+let content = "It's required! Let's learn how to leverage the JavaScript Constraint API to remind your users when they need to finish filling out those pesky form fields. And we will show you how to do this with keeping accessibility in mind. ...";
+return returnObjectValues;
 };
+console.log(returnObjectValues);
 
 // IGNORE THIS BELOW. It is for the tests.
 
