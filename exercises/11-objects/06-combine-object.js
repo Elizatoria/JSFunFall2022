@@ -16,6 +16,12 @@ console.log(combineObjects);
 };
 combineObjects({obj1: "Bob", obj2: "Insecticon"});
 
+//Answer
+const combineObjects = (obj1, obj2) => {
+  // WRITE YOUR ANSWER HERE
+  return { ...obj1, ...obj2 };
+};
+
 // IGNORE THIS BELOW. It is for the tests.
 
 export default combineObjects;

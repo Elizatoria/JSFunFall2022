@@ -41,3 +41,14 @@ const graduate = {
   }
 }
 console.log(graduate);
+
+//Answer
+const graduate = {
+  name,
+  graduationYear,
+  skills,
+  links: {
+    github: githubLink,
+    linkedIn: linkedInLink,
+  },
+};
