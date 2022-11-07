@@ -27,6 +27,25 @@ for (let i = 0; i < numbers.length; i++) {
   console.log(high);
   }
 };
+
+// Solution 1: For loop
+let highest;
+for (let i = 0; i < numbers.length; i++) {
+  let num = numbers[i];
+  if (num > highest || highest === undefined) highest = num;
+}
+return highest;
+
+// Solution 2: For ... of loop
+let highest;
+for (let num of numbers) {
+  if (num > highest || highest === undefined) highest = num;
+}
+return highest;
+
+// Solution 3
+return Math.max(...numbers);
+
 highestNumber([1, 10, 2, 3, 4]);
 
 // IGNORE THIS BELOW. It is for the tests.
