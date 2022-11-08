@@ -1,6 +1,6 @@
 /**
  * Loop through all properties within the "links" object
- * an return a list of HTML links.
+ * and return a list of HTML links.
  * @param {object} links e.g. { Text: "https://url.com" }
  * @returns {string} of <a> tags
  *
@@ -18,6 +18,10 @@
 
 const generateLinks = (links) => {
   // WRITE YOUR ANSWER HERE
+  for (let i = 0; i < links.length; i++) {
+    let item = links[i];
+    console.log(item);
+  }
 };
 
 // IGNORE THIS BELOW. It is for the tests.
