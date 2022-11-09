@@ -16,3 +16,6 @@ let errorMessage = error;
 if (error === false) 
 errorMessage = "An unexpected error occured";
 console.log(error || errorMessage)
+
+//Answer
+let errorMessage = error || "An unexpected error occurred.";
