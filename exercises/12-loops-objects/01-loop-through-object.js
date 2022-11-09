@@ -19,7 +19,7 @@
  const generateLinks = (links) => {
   // WRITE YOUR ANSWER HERE
   for (const key in links) {
-      console.log(`<a href="${links[key]}"></a>`);
+      console.log(`<a href="${links[key]}">${key}</a>`);
 };};
 generateLinks({Dogs: "http://www.omfgdogs.com",
   Kittens: "https://giphy.com/search/kitten",
