@@ -25,6 +25,15 @@ generateLinks({Dogs: "http://www.omfgdogs.com",
   Kittens: "https://giphy.com/search/kitten",
  Hamster: "https://hamster.dance/hamsterdance/"})
 
+ const generateLinks = (links) => {
+  // WRITE YOUR ANSWER HERE
+  let html = "";
+  for (let title in links) {
+    html += `<a href="${links[title]}">${title}</a>`;
+  }
+  return html;
+};
+
 // IGNORE THIS BELOW. It is for the tests.
 
 export default generateLinks;
