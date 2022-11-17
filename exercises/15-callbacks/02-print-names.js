@@ -33,9 +33,8 @@ const printer = (name) => {
  */
 const printNames = (array, callback) => {
   // WRITE PART 2 OF YOUR ANSWER HERE
-  for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    return callback(printer);
+  for (let item of array) {
+    callback(item);
   }
 };
 
