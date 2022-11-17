@@ -33,6 +33,20 @@ const findFirst = (arrayOfNum, callback) => {
   }
 };
 
+const findFirst = (arrayOfNum, callback) => {
+  // WRITE YOUR ANSWER HERE
+
+  // Solution 1: for loop
+  for (let i = 0; i < arrayOfNum.length; i++) {
+    if (callback(arrayOfNum[i])) return arrayOfNum[i];
+  }
+
+  // Solution 2: for ... of loop
+  for (let num of arrayOfNum) {
+    if (callback(num)) return num;
+  }
+};
+
 // IGNORE THIS BELOW. It is for the tests.
 
 export { findFirst };
