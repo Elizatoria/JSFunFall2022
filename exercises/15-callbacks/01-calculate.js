@@ -21,9 +21,17 @@
  * console.log( calculate(7, 3, subtract) ); // 4
  */
 
-const calculate = (num1, num2, callback) => {
+ const calculate = (num1, num2, callback) => {
   // WRITE YOUR ANSWER HERE
+  return callback(num1, num2);
 };
+
+const add = (num1, num2) => {
+     return num1 + num2;
+    }
+
+const addition = calculate (4, 5, add)
+console.log(add);
 
 // IGNORE THIS BELOW. It is for the tests.
 
