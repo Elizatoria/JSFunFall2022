@@ -24,3 +24,8 @@ const links = [
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+const printURL = (html, link, i) => {
+  html = `<a href="${link}">${i+1}. ${link}</a>`;
+}
+links.forEach(printURL);
