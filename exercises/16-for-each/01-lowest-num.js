@@ -15,3 +15,17 @@ const lowestArray = (num, i) => {
 }
 numbers.forEach(lowestArray);
 console.log(lowestNumber);
+
+// Solution 1
+const findLowestNumber = (num) => {
+  if (num < lowestNumber) {
+    lowestNumber = num;
+  }
+};
+
+numbers.forEach(findLowestNumber);
+
+// Solution 2
+numbers.forEach((num) => {
+  if (num < lowestNumber) lowestNumber = num;
+});
