@@ -25,4 +25,5 @@ const askForUpdate = () => {
 const sendEmail = (callback) => {
   console.log(callback());
 }
+
 sendEmail(askForUpdate);
