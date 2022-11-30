@@ -12,4 +12,8 @@
  */
 (function () {
   // Put your answers in here
+  const socialMedia = document.querySelectorAll(".Social");
+  socialMedia.forEach(link => {
+    console.log(link);
+  });
 })();
