@@ -10,13 +10,13 @@
  *
  * Do not change the HTML unless you are instructed to do so.
  */
-(function (){
-  const targetButton = document.querySelector("#Target");
-  console.log(targetButton);
-})();
-
 (function () {
   // Put your answers in here
+
+  //Section Three
+  const targetButton = document.querySelector("#Target");
+  console.log(targetButton);
+  
   const socialMedia = document.querySelectorAll(".Social");
   socialMedia.forEach(link => {
     console.log(link);
