@@ -10,6 +10,11 @@
  *
  * Do not change the HTML unless you are instructed to do so.
  */
+(function (){
+  const targetButton = document.querySelector("#Target");
+  console.log(targetButton);
+})();
+
 (function () {
   // Put your answers in here
   const socialMedia = document.querySelectorAll(".Social");
