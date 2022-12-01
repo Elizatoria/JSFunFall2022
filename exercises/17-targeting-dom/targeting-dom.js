@@ -12,6 +12,23 @@
  */
 (function () {
   // Put your answers in here
+  //Section One
+  const firstBullet = document.querySelector("li");
+  console.log("firstBullet", firstBullet);
+
+  const myId = document.querySelector("#myId");
+  console.log("myID", myId);
+
+  //Section Two
+  const yellowLi = document.querySelectorAll("li");
+  yellowLi.forEach((li) => {
+    console.log("yellowLi", li);
+  });
+
+  const allBgWarning = document.querySelectorAll(".bg-warning");
+  allBgWarning.forEach((li) => {
+    console.log(".bg-warning", li);
+  });
 
   //Section Three
   const targetButton = document.querySelector("#Target");
@@ -21,4 +38,8 @@
   socialMedia.forEach(link => {
     console.log(link);
   });
+
+  //Section Four
+  const cells = document.querySelectorAll("#myRow > .col");
+  cells.forEach((cell) => console.log("cell", cell));
 })();
