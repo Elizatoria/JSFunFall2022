@@ -12,4 +12,11 @@
   const firefox = document.querySelector("#FireFox");
   const href = firefox.href;
   firefox.href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript";
+
+  const vic = document.querySelector("Victorious"); //Got stuck here
+  const textContent = vic.textContent;
+  vic.textContent = "I am victorious!";
+
+  const alertInfo = document.querySelector("alert alert-info");
+  alertInfo.style.backgroundColor = "#ff0000";
 })();
