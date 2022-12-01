@@ -5,4 +5,11 @@
  */
 (function () {
   // Put your answers in here
+  const img = document.querySelector("img");
+  const src = img.src;
+  img.src = "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif";
+
+  const firefox = document.querySelector("#FireFox");
+  const href = firefox.href;
+  firefox.href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript";
 })();
