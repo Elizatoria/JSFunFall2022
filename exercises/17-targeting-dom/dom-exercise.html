@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://files.worldwildlife.org/wwfcmsprod/images/Panda_in_Tree/hero_full/2wgwt9z093_Large_WW170579.jpg"
+    />
+    <script>
+      (function () {
+        /**
+         * Question 1: Use console.log to log the image url (the src)
+         * Question 2: Change the image (the src)
+         * Question 3: Add an alt attribute to the image
+         *
+         * Write your answers to each question below
+         */
+        const img = document.querySelector("img");
+        const src = img.src;
+        console.log(img.src);
+        
+        img.src = "https://www.gannett-cdn.com/-mm-/fff45dfe8774ad5a8ac7b0015cd9a97a461ef4d7/c=0-108-918-627&r=x1683&c=3200x1680/local/-/media/2015/09/23/DetroitFreePress/DetroitFreePress/635786063852286700-red-panda-baby1.jpg";
+
+        img.alt = "Red Panda";
+        console.log(document.querySelector("img"));
+      })();
+    </script>
+  </body>
+</html>
