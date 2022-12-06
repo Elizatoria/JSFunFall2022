@@ -13,20 +13,22 @@
   const href = firefox.href;
   firefox.href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript";
 
-  const vic = document.querySelector(".Victorious"); //Got stuck here
+  const vic = document.querySelector("#Victorious"); //Got stuck here
   const textContent = vic.textContent;
   vic.textContent = "I am victorious!";
 
-  const alertInfo = document.querySelector(".alert alert-info");
-  const style = style.backgroundColor;
+  const alertInfo = document.querySelector("#inline");
   alertInfo.style.backgroundColor = "#ff0000";
 
-  const textColor = document.queryCommandValue(".textColor");
-  const textStyle = style.textColor;
-  textColor.textStyle.textColor = "#ff000";
+  const textColor = document.querySelector("#textColor");
+  textColor.classList.add("text-muted");
+
+  document.querySelector("#hide").style.display = "none";
+
+  document.querySelector("#Boo").classList.remove("hidden");
 
   const button = document.querySelector(".my-Button");
   if (button.classList.contains("btn-primary")) {
-  button.textContent = "&check; blue";
+  button.textContent = "✓ blue";
   }
 })();
