@@ -51,9 +51,9 @@
     <section class="bg-dark pt-4 pb-2 flex-fill">
       <div class="container">
         <!-- Handle this form -->
-        <form class="form-group">
+        <form id="Searching" class="form-group">
           <div class="input-group">
-            <input
+            <input id="Ocean"
               type="search"
               placeholder="Search for oceans near Albany, NY"
               aria-label="Search for oceans near Albany, NY"
@@ -66,7 +66,7 @@
         </form>
 
         <!-- Display "No results for ___ found" inside of this <p></p> -->
-        <p class="text-white"></p>
+        <p id="Answer" class="text-white"></p>
       </div>
     </section>
 
@@ -76,22 +76,22 @@
           <div class="form-inline">
             <div class="form-check form-check-inline">
               <!-- The "is-invalid" class here makes the "I Agree ..." red. The input should only have this class if the user did not agree to the terms and conditions -->
-              <input class="form-check-input is-invalid" type="checkbox" />
+              <input id="check" class="form-check-input is-invalid" type="checkbox" />
               <label class="form-check-label" for="terms"
                 >I Agree to the Terms and Conditions</label
               >
             </div>
 
-            <button type="submit" class="btn btn-primary">Continue</button>
+            <button id="terms" type="submit" class="btn btn-primary">Continue</button>
           </div>
 
           <!-- Only display me if the user did not agree to the terms and conditions -->
-          <div class="text-danger">
+          <div id="disagree" class="text-danger">
             <small>You must agree to the terms and conditions</small>
           </div>
 
           <!-- Only display after the user clicks on the "Continue" button and he has agreed to the terms -->
-          <div class="text-success">
+          <div id="agree" class="text-success">
             <small>Thank you for signing up!</small>
           </div>
         </form>

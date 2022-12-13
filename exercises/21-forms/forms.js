@@ -12,8 +12,8 @@
   // Write your answer here
   const textbox = document.querySelector("#Textbox");
   const mystery = document.querySelector("#Mystery");
-  mystery.addEventListener("input", event => {
-    mystery.input = event.target.value;
+  textbox.addEventListener("input", (event) => {
+    mystery.textContent = event.target.value;
 });
   /**
    * Problem 2: Display the results of the world's most pointless search engine.
@@ -28,7 +28,11 @@
    * and you must prevent the page from refreshing when the form is submitted.
    */
   // Write your answer here
-
+  document.querySelector("#Searching").addEventListener("submit", event => {
+    event.preventDefault(); 
+    const oceans = document.querySelector("#Ocean").value;
+    document.querySelector("#Answer").textContent = `No results for ${oceans} found`;
+  });
   /**
    * Problem 3: Agree to the terms and conditions
    *
@@ -40,4 +44,21 @@
    * To start, you will need to hide some element on the page and change the input's classes.
    */
   // Write your answer here
+  const termsButton = document.querySelector("#terms");
+  const check = document.querySelector("#check");
+  const disagree = document.querySelector("#disagree");
+  const agree = document.querySelector("#agree");
+
+  termsButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (check.target.checked) {
+      agree.classList.remove("hidden");
+      disagree.classList.add("hidden");
+      termsButton.textContent = agree.value;
+    } else {
+      agree.classList.add("hidden");
+      disagree.classList.remove("hidden");
+      termsButton.textContent = disagree.value;
+  }
+})
 })();
