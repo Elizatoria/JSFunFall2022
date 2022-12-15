@@ -13,4 +13,13 @@
    * You can also make the "x" icon dismiss the notification.
    */
   // Write your answer here
+  const buttons = document.querySelectorAll("[data-plans]");
+  const notification = document.querySelector(".notification");
+
+  buttons.forEach((option) => {
+    option.addEventListener("click", () => {
+      const plan = option.getAttribute("data-plans");
+      notification.textContent = `Thank you for purchasing the ${plan} plan!`;
+    });
+  });
 })();
