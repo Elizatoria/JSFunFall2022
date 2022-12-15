@@ -44,47 +44,23 @@
    * To start, you will need to hide some element on the page and change the input's classes.
    */
   // Write your answer here
-  const check = document.querySelector("#check");
-  const disagree = document.querySelector("#disagree");
-  const agree = document.querySelector("#agree");
-  const checkbox = document.querySelector("#check");
+const check = document.querySelector("#check");
+const agree = document.querySelector("#agree");
+const disagree = document.querySelector("#disagree");
 
-  const showTermsError = () => {
-    if (!check.classList.contains("is-invalid")) {
-      check.classList.add("is-invalid");
-    }
-
-if (!agree.classList.contains("hidden")) {
-  agree.classList.add("hidden");
-}
-
-if (disagree.classList.contains("hidden")) {
-  disagree.classList.remove("hidden");
-}
-};
-
-const showTermsSuccess = () => {
-  if (check.classList.contains("is-invalid")) {
-    check.classList.remove("is-invalid");
-  }
-
-  if (agree.classList.contains("hidden")) {
-    agree.classList.remove("hidden");
-  }
-
-  if (!disagree.classList.contains("hidden")) {
-    disagree.classList.add("hidden");
-  }
-};
-
-document.querySelector("#termsForm").addEventListener("submit", (event) => {
+const termsForm = document.querySelector("#termsForm");
+termsForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (checkbox.checked) {
-    showTermsSuccess();
-  } else {
-    showTermsError();
-  }
-});
-
+const isChecked = check.checked;
+if (isChecked) {
+  agree.classList.remove("hidden");
+  disagree.classList.add("hidden");
+  check.classList.remove("is-invalid");
+} else {
+  disagree.classList.remove("hidden");
+  agree.classList.add("hidden");
+  check.classList.add("is-invalid");
+}
+})
 })();
