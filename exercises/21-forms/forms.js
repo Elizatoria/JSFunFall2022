@@ -44,21 +44,47 @@
    * To start, you will need to hide some element on the page and change the input's classes.
    */
   // Write your answer here
-  const termsButton = document.querySelector("#terms");
   const check = document.querySelector("#check");
   const disagree = document.querySelector("#disagree");
   const agree = document.querySelector("#agree");
+  const checkbox = document.querySelector("#check");
 
-  termsButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (check.target.checked) {
-      agree.classList.remove("hidden");
-      disagree.classList.add("hidden");
-      termsButton.textContent = agree.value;
-    } else {
-      agree.classList.add("hidden");
-      disagree.classList.remove("hidden");
-      termsButton.textContent = disagree.value;
+  const showTermsError = () => {
+    if (!check.classList.contains("is-invalid")) {
+      check.classList.add("is-invalid");
+    }
+
+if (!agree.classList.contains("hidden")) {
+  agree.classList.add("hidden");
+}
+
+if (disagree.classList.contains("hidden")) {
+  disagree.classList.remove("hidden");
+}
+};
+
+const showTermsSuccess = () => {
+  if (check.classList.contains("is-invalid")) {
+    check.classList.remove("is-invalid");
   }
-})
+
+  if (agree.classList.contains("hidden")) {
+    agree.classList.remove("hidden");
+  }
+
+  if (!disagree.classList.contains("hidden")) {
+    disagree.classList.add("hidden");
+  }
+};
+
+document.querySelector("#termsForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  if (checkbox.checked) {
+    showTermsSuccess();
+  } else {
+    showTermsError();
+  }
+});
+
 })();
