@@ -7,7 +7,7 @@
   document.querySelector("body").appendChild(AutobotButton);
   document.querySelector(".Autobot").addEventListener("click", event => {
     const AutobotText = document.querySelector("#Autobot");
-    AutobotText.textContent = `Freedom is the right of all Sentient Beings! You are an Autobot`;
+    AutobotText.textContent = alert(`Freedom is the right of all Sentient Beings! You are an Autobot`);
   });
   
   const DecepticonButton = document.createElement("button");
@@ -18,6 +18,6 @@
   document.querySelector("body").appendChild(DecepticonButton);
   document.querySelector(".Decepticon").addEventListener("click", event => {
     const DecepticonText = document.querySelector("#Decepticon");
-    DecepticonText.textContent = `Peace through tyranny! You are a Decepticon.`;
+    DecepticonText.textContent = alert(`Peace through tyranny! You are a Decepticon.`);
   });
 })();
