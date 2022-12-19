@@ -14,12 +14,14 @@
    */
   // Write your answer here
   const buttons = document.querySelectorAll("[data-plans]");
-  const notification = document.querySelector(".notification");
+  const notification = document.querySelector("#notification");
+  const notice =document.querySelector("#notice");
 
   buttons.forEach((option) => {
     option.addEventListener("click", () => {
       const plan = option.getAttribute("data-plans");
       notification.textContent = `Thank you for purchasing the ${plan} plan!`;
+      notice.classList.remove("hidden");
     });
   });
 })();
