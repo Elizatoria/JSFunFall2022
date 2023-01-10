@@ -23,7 +23,6 @@ const greet = (name) => {
  */
 // Put your answer here
 import greet from "greet.js";
-import { multiply } from "./multiply";
 greet ();
 /**
  * Problem 2: Named Exports
