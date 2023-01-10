@@ -22,7 +22,9 @@ const greet = (name) => {
  * @see https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
  */
 // Put your answer here
-
+import greet from "greet.js";
+import { multiply } from "./multiply";
+greet ();
 /**
  * Problem 2: Named Exports
  * You are going to follow the same steps,
@@ -38,7 +40,9 @@ const multiply = (a, b) => {
  * 4. Import the function at the top of this file using the name "multiply"
  */
 // Put your answer here
-
+import { multiply, myObject } from "multiply.js";
+multiply();
+console.log(myObject);
 /**
  * Ignore me below. This is for the tests.
  */
